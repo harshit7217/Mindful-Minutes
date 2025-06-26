@@ -1,0 +1,32 @@
+let equalInterval = null;
+let equalTimeout = null;
+
+function startEqualBreathing() {
+  const duration = parseInt(document.getElementById("duration").value);
+  const circle = document.getElementById("circle");
+  const instruction = document.getElementById("instruction");
+
+  if (!duration || duration < 1) {
+    alert("Please enter a valid duration.");
+    return;
+  }
+
+  instruction.textContent = "Inhale...";
+  circle.style.animation = "equalBreath 8s infinite ease-in-out";
+
+  equalInterval = setInterval(() => {
+    instruction.textContent = instruction.textContent === "Inhale..." ? "Exhale..." : "Inhale...";
+  }, 8000); // 4s in + 4s out
+
+  equalTimeout = setTimeout(() => {
+    stopEqualBreathing();
+    alert("Equal Breathing session complete!");
+  }, duration * 60 * 1000);
+}
+
+function stopEqualBreathing() {
+  clearInterval(equalInterval);
+  clearTimeout(equalTimeout);
+  document.getElementById("circle").style.animation = "none";
+  document.getElementById("instruction").textContent = "Breathing session ended.";
+}

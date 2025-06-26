@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Breathing Techniques | Mindful Minutes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="478breathing.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">🌿 Mindful Minutes</div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="breathe.html">Breathing</a></li>
+            <li><a href="mood.html">Mood Tracker</a></li>
+            <li><a href="journal.html">Gratitude</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <header class="page-header">
+        <h1>🧘‍♂️ Breathing Techniques</h1>
+        <p>Choose a technique below to begin your mindful moment</p>
+    </header>
+
+
+
+    <div class="hero">
+        <h1 class="fade-in">🌿 Mindful Minutes</h1>
+        <p class="slide-up">Let’s breathe in stillness and exhale the rush.</p>
+        <div class="breathing-container">
+            <div class="circle" id="circle"></div>
+            <p id="instruction">Click "Begin" to start breathing</p>
+            <input type="number" id="duration" placeholder="Duration (minutes)" min="1" />
+            <button onclick="startBreathing()">Begin</button>
+            <button onclick="stopBreathing()">End</button>
+        </div>
+    </div>
+
+
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>© 2025 Mindful Minutes | Made with 💙 by Harshit</p>
+            <ul class="footer-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="breathe.html">Breathing</a></li>
+                <li><a href="mood.html">Mood Tracker</a></li>
+                <li><a href="journal.html">Gratitude</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="478breathing.js"></script>
+
+</body>
+
+</html>

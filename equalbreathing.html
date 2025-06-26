@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Breathing Techniques | Mindful Minutes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="equalbreathing.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">🌿 Mindful Minutes</div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="breathe.html">Breathing</a></li>
+            <li><a href="mood.html">Mood Tracker</a></li>
+            <li><a href="journal.html">Gratitude</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <header class="page-header">
+        <h1>🧘‍♂️ Breathing Techniques</h1>
+        <p>Choose a technique below to begin your mindful moment</p>
+    </header>
+    <hr>
+    <div class="container">
+        <h1>🌬️ Equal Breathing</h1>
+        <p>Inhale and exhale for the same count. Enter duration and begin.</p>
+
+        <input type="number" id="duration" placeholder="Duration (minutes)" min="1" />
+        <button onclick="startEqualBreathing()">Begin</button>
+        <button onclick="stopEqualBreathing()">End</button>
+
+        <div class="circle" id="circle"></div>
+        <p id="instruction">Ready to begin</p>
+    </div>
+
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>© 2025 Mindful Minutes | Made with 💙 by Harshit</p>
+            <ul class="footer-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="breathe.html">Breathing</a></li>
+                <li><a href="mood.html">Mood Tracker</a></li>
+                <li><a href="journal.html">Gratitude</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="equalbreathing.js"></script>
+
+</body>
+
+</html>

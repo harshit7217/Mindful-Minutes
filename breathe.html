@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Breathing Techniques | Mindful Minutes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="breathe.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">🌿 Mindful Minutes</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="breathe.html">Breathing</a></li>
+      <li><a href="mood.html">Mood Tracker</a></li>
+      <li><a href="journal.html">Gratitude</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <header class="page-header">
+    <h1>🧘‍♂️ Breathing Techniques</h1>
+    <p>Choose a technique below to begin your mindful moment</p>
+  </header>
+
+  <main class="techniques-container">
+    <section class="technique">
+      <h2>☁️ Box Breathing</h2>
+      <p>Inhale – Hold – Exhale – Hold (4 seconds each). Great for focus and calm.</p>
+      <button onclick="startTechnique('box')">Start</button>
+    </section>
+
+    <section class="technique">
+      <h2>🌙 4-7-8 Breathing</h2>
+      <p>Inhale for 4, hold for 7, exhale for 8. Promotes deep relaxation and sleep.</p>
+      <button onclick="startTechnique('478')">Start</button>
+    </section>
+
+    <section class="technique">
+      <h2>🌊 Equal Breathing</h2>
+      <p>Inhale and exhale for the same duration. Balances and grounds the mind.</p>
+      <button onclick="startTechnique('equal')">Start</button>
+    </section>
+
+    <section class="technique">
+      <h2>🔥 Extended Exhale</h2>
+      <p>Exhale longer than you inhale to engage your body’s relaxation response.</p>
+      <button onclick="startTechnique('exhale')">Start</button>
+    </section>
+  </main>
+
+  <br><br><br><br>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>© 2025 Mindful Minutes | Made with 💙 by Harshit</p>
+      <ul class="footer-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="breathe.html">Breathing</a></li>
+        <li><a href="mood.html">Mood Tracker</a></li>
+        <li><a href="journal.html">Gratitude</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="breathe.js"></script>
+  
+</body>
+
+</html>
