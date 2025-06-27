@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mood Tracker | Mindful Minutes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="personal.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Chart.js CDN -->
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">🌿 Mindful Minutes</div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="breathe.html">Breathing</a></li>
+        <li><a href="mood.html">Mood Tracker</a></li>
+        <li><a href="journal.html">Gratitude</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <input type="text" id="username" placeholder="Enter your name" />
+      <button onclick="saveUser()">Start Session</button>
+      <h2 id="greeting"></h2>
+
+      <h1>🌿 Hello, <span id="username">friend</span>!</h1>
+      <p>What would you like to focus on today?</p>
+
+      <input
+        type="text"
+        id="userIntent"
+        placeholder="E.g., Breathe deeply, Stay calm, Smile more"
+      />
+      <button onclick="saveIntent()">Set My Intention</button>
+
+      <div id="intentDisplay"></div>
+      
+      <select id="presetIntent">
+        <option value="">-- Choose a goal --</option>
+        <option value="Do 5 minutes of Box Breathing">🧘 Box Breathing</option>
+        <option value="Write 3 gratitude notes">🙏 Gratitude Journal</option>
+        <option value="Log my mood tonight">📊 Mood Check-in</option>
+      </select>
+      
+      <button onclick="setPreset()">Set Goal</button>
+      <div id="intentDisplay2"></div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>
+          © 2025 Mindful Minutes | Made with 💙 by Harshit, Paridhi, Prasang,
+          Simran
+        </p>
+        <ul class="footer-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="breathe.html">Breathing</a></li>
+          <li><a href="mood.html">Mood Tracker</a></li>
+          <li><a href="journal.html">Gratitude</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="personal.js"></script>
+  </body>
+</html>
