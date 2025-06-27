@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mood Tracker | Mindful Minutes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="journal.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Chart.js CDN -->
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">🌿 Mindful Minutes</div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="breathe.html">Breathing</a></li>
+        <li><a href="mood.html">Mood Tracker</a></li>
+        <li><a href="journal.html">Gratitude</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <h1>🙏 Gratitude Journal</h1>
+      <p>Write down something you’re grateful for today:</p>
+
+      <textarea
+        id="gratitudeInput"
+        placeholder="I'm grateful for..."
+      ></textarea>
+      <button onclick="saveGratitude()">Save Entry</button>
+
+      <h2>🕒 Your Gratitude Log</h2>
+      <div id="gratitudeLog"></div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>
+          © 2025 Mindful Minutes | Made with 💙 by Harshit, Paridhi, Prasang,
+          Simran
+        </p>
+        <ul class="footer-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="breathe.html">Breathing</a></li>
+          <li><a href="mood.html">Mood Tracker</a></li>
+          <li><a href="journal.html">Gratitude</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="journal.js"></script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mood Tracker | Mindful Minutes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mood.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Chart.js CDN -->
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">🌿 Mindful Minutes</div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="breathe.html">Breathing</a></li>
+        <li><a href="mood.html">Mood Tracker</a></li>
+        <li><a href="journal.html">Gratitude</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <h1>📊 Mood Tracker</h1>
+      <p>Log your mood and reflect on your day.</p>
+
+      <label for="mood">How are you feeling today?</label>
+      <select id="mood">
+        <option value="Happy">😊 Happy</option>
+        <option value="Calm">😌 Calm</option>
+        <option value="Stressed">😟 Stressed</option>
+        <option value="Sad">😢 Sad</option>
+        <option value="Energetic">⚡ Energetic</option>
+      </select>
+
+      <label for="notes">Write a reflection (optional):</label>
+      <textarea id="notes" placeholder="What's on your mind?"></textarea>
+
+      <button onclick="saveMood()">Save Mood</button>
+
+      <div class="group">
+        <canvas id="moodChart"></canvas>
+      </div>
+      <h1>⏲️ Set Remainder</h1>
+
+      <input type="datetime-local" id="reminderTime" />
+      <input type="text" id="reminderText" placeholder="Reminder message" />
+      <button onclick="setReminder()">Set Reminder</button>
+
+      <!-- Mood Graph -->
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>
+          © 2025 Mindful Minutes | Made with 💙 by Harshit, Paridhi, Prasang,
+          Simran
+        </p>
+        <ul class="footer-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="breathe.html">Breathing</a></li>
+          <li><a href="mood.html">Mood Tracker</a></li>
+          <li><a href="journal.html">Gratitude</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="mood.js"></script>
+  </body>
+</html>
