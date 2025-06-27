@@ -77,6 +77,24 @@ body {
     gap: 20px;
 }
 
+input, option, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #004d40;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
 .site-footer {
   background-color: #00796b;
   color: white;
