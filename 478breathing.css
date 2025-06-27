@@ -109,6 +109,24 @@ body {
   animation: slideUp 2s 1s ease-out forwards;
 }
 
+input {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #004d40;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #004d40;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 
 path {
   stroke-dasharray: 300;

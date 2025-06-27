@@ -94,6 +94,24 @@ body {
   animation: none;
 }
 
+input {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #004d40;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #004d40;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 @keyframes equalBreath {
   0%   { transform: scale(1); }
   50%  { transform: scale(1.3); }

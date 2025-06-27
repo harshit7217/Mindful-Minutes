@@ -83,6 +83,8 @@ select, textarea {
   border-radius: 8px;
 }
 
+
+
 button {
   padding: 10px 20px;
   background: #00796b;
@@ -107,6 +109,33 @@ canvas {
     gap: 10px;
     justify-content: center;
     height: auto;
+}
+
+textarea {
+  width: 97%;
+  height: 100px;
+  resize: none;
+  border: 2px solid #004d40;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #004d40;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #004d40;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .container2 {
