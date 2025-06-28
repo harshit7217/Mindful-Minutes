@@ -13,14 +13,6 @@ function saveMood() {
   updateMoodChart();
 }
 
-function viewHistory() {
-  let historyDiv = document.getElementById("history");
-  historyDiv.innerHTML = "<h2>Past Mood Entries</h2>";
-  moodHistory.forEach(entry => {
-    historyDiv.innerHTML += `<p><strong>${entry.date}:</strong> ${entry.mood} - ${entry.notes}</p>`;
-  });
-}
-
 let moodChartInstance;
 
 function updateMoodChart() {

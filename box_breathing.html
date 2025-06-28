@@ -33,6 +33,7 @@
         <input type="number" id="boxDuration" placeholder="Enter duration (minutes)" min="1" max="30" />
         <button onclick="startBoxBreathing()">Start</button>
         <button onclick="stopBoxBreathing()">Stop</button>
+        <audio id="breathSound" src="Audio/breathing.mp3" loop preload="auto"></audio>
         <p id="instruction">Click Start to begin Box Breathing</p>
         <div class="box" id="box"></div>
     </div>

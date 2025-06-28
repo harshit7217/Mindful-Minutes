@@ -1,6 +1,8 @@
 let equalInterval = null;
 let equalTimeout = null;
 
+const breathSound = document.getElementById("breathSound");
+
 function startEqualBreathing() {
   const duration = parseInt(document.getElementById("duration").value);
   const circle = document.getElementById("circle");
@@ -13,6 +15,8 @@ function startEqualBreathing() {
 
   instruction.textContent = "Inhale...";
   circle.style.animation = "equalBreath 8s infinite ease-in-out";
+  breathSound.volume = 1.0;
+  breathSound.play();
 
   equalInterval = setInterval(() => {
     instruction.textContent = instruction.textContent === "Inhale..." ? "Exhale..." : "Inhale...";
@@ -29,4 +33,6 @@ function stopEqualBreathing() {
   clearTimeout(equalTimeout);
   document.getElementById("circle").style.animation = "none";
   document.getElementById("instruction").textContent = "Breathing session ended.";
+  breathSound.pause();
+  breathSound.currentTime = 0;
 }

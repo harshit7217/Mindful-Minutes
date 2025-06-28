@@ -29,6 +29,8 @@
     <div class="container">
         <h1>🌬️ Equal Breathing</h1>
         <p>Inhale and exhale for the same count. Enter duration and begin.</p>
+        <audio id="breathSound" src="Audio/breathing.mp3" loop preload="auto"></audio>
+        <p>Duration:</p>
 
         <input type="number" id="duration" placeholder="Duration (minutes)" min="1" />
         <button onclick="startEqualBreathing()">Begin</button>

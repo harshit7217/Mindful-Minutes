@@ -1,5 +1,6 @@
 let extendedInterval = null;
 let extendedTimeout = null;
+const breathSound = document.getElementById("breathSound");
 
 function startExtendedBreathing() {
   const duration = parseInt(document.getElementById("duration").value);
@@ -13,6 +14,8 @@ function startExtendedBreathing() {
 
   instruction.textContent = "Inhale...";
   circle.style.animation = "extendedBreath 12s infinite ease-in-out";
+  breathSound.volume = 1.0;
+  breathSound.play();
 
   extendedInterval = setInterval(() => {
     instruction.textContent = instruction.textContent === "Inhale..." ? "Exhale..." : "Inhale...";
@@ -29,4 +32,6 @@ function stopExtendedBreathing() {
   clearTimeout(extendedTimeout);
   document.getElementById("circle").style.animation = "none";
   document.getElementById("instruction").textContent = "Breathing session ended.";
+  breathSound.pause();
+  breathSound.currentTime = 0;
 }

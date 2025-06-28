@@ -2,6 +2,7 @@ let boxInterval = null;
 let boxTimeout = null;
 let stepIndex = 0;
 const steps = ["Inhale", "Hold", "Exhale", "Hold"];
+const breathSound = document.getElementById("breathSound");
 
 function startBoxBreathing() {
   const duration = parseInt(document.getElementById("boxDuration").value);
@@ -12,6 +13,11 @@ function startBoxBreathing() {
     alert("Please enter a valid duration (at least 1 minute).");
     return;
   }
+
+  box.style.animation = "breathe 8s infinite ease-in-out";
+  instruction.textContent = "Inhale...";
+  breathSound.volume = 1.0;
+  breathSound.play();
 
   stepIndex = 0;
   instruction.textContent = steps[stepIndex];
@@ -33,4 +39,6 @@ function stopBoxBreathing() {
   clearTimeout(boxTimeout);
   document.getElementById("box").style.animation = "none";
   document.getElementById("instruction").textContent = "Box Breathing stopped.";
+  breathSound.pause();
+  breathSound.currentTime = 0;
 }
